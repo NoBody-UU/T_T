@@ -1,0 +1,319 @@
+/*Estilos CSS Generales/Main */
+/* by: NoBody#9666*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto', 'Sans serif';
+}
+
+.contenedor{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+/* Nuevo code (que el NO se mueva) */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__title {
+  text-align: center;
+}
+
+.hero__image-container {
+  display: flex;
+  width: 100%;
+  max-width: 512px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 0.5rem 0 black;
+}
+
+.hero__image {
+  width: 100%;
+}
+/* Nuevo code (que el NO se mueva) -END*/
+
+.bg_animate{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to right, #005C98, #505BDA);
+	position: relative;
+	overflow: hidden;
+}
+
+.header_nav{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.header_nav .contenedor{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 0;
+}
+
+.header_nav h1{
+	color: #fff;
+	font-family: 'Gagalin';
+}
+
+.header_nav nav a{
+	color: #fff;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+
+
+/* burbujas */
+
+.burbuja{
+	border-radius: 50%;
+	background: #fff;
+	opacity: .3;
+
+	position: absolute;
+	bottom: -150;
+	
+	animation: burbujas 3s linear infinite ;
+}
+
+.burbuja:nth-child(1){
+	width: 80px;
+	height: 80px;
+	left: 5%;
+	animation-duration: 3s;
+	animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+	width: 100px;
+	height: 100px;
+	left: 35%;
+	animation-duration: 3s;
+	animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+	width: 20px;
+	height: 20px;
+	left: 15%;
+	animation-duration: 1.5s;
+	animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+	width: 50px;
+	height: 50px;
+	left: 90%;
+	animation-duration: 6s;
+	animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+	width: 70px;
+	height: 70px;
+	left: 65%;
+	animation-duration: 3s;
+	animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+	width: 20px;
+	height: 20px;
+	left: 50%;
+	animation-duration: 4s;
+	animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+	width: 20px;
+	height: 20px;
+	left: 50%;
+	animation-duration: 4s;
+	animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+	width: 100;
+	height: 100px;
+	left: 52%;
+	animation-duration: 5s;
+	animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+	width: 65px;
+	height: 65px;
+	left: 51%;
+	animation-duration: 3s;
+	animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+	width: 40px;
+	height: 40px;
+	left: 35%;
+	animation-duration: 3s;
+	animation-delay: 4s;
+}
+
+
+@keyframes burbujas{
+	0%{
+			bottom: 0;
+			opacity: 0;
+	}
+	30%{
+			transform: translateX(30px);
+	}
+	50%{
+			opacity: .4;
+	}
+	100%{
+			bottom: 100vh;
+			opacity: 0;
+	}
+}
+
+@keyframes movimiento{
+	0%{
+			transform: translateY(0);
+	}
+	50%{
+			transform: translateY(30px);
+	}
+	100%{
+			transform: translateY(0);
+	}
+}
+
+body {
+	background: #f2f2f2;
+	font-family: 'Roboto', sans-serif;
+	min-height: 100vh;
+	background: #141414;
+}
+
+.contenedor {
+	width: 1200px;
+	margin: auto;
+	padding: 100px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+/* TITULOS(H1, H2) */
+h1 {
+	font-size: 58px;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 80px;
+	text-transform: uppercase;
+	color: #91bd21;
+	border: 5px solid #91bd21;
+	padding: 5px 10px;
+	display: inline-block;
+}
+h2 {
+	font-size: 30px;
+	font-weight: 100;
+	text-align: center;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	color: #b6dc0e;
+	border: 5px solid #141414;
+	padding: 5px 10px;
+	display: inline-block;
+}
+/* TITULOS(H1, H2) -END */
+
+
+.contenedor-botones {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px;
+}
+/*Botones general */
+.boton {
+	display: inline-flexbox;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	width: 30%;
+	height: 80px;
+	background: #000000;
+	color: #fff;
+	font-style: n;
+	font-family: 'Roboto', sans-serif;
+	font-size: 45px;
+	font-weight: 500;
+	border: 5px solid #06f6fa;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	
+}
+/*Botones general -END*/
+
+/* Botones span (Para que el texto se sobrescriba de lso diseños) */
+.boton span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+/* Boton SI */
+.boton.si::after {
+	content: "";
+	width: 100%;
+	height: 350px;
+	background: #18a362;
+	position: absolute;
+	z-index: 1;
+	top: -350px;
+	left: 0;
+	transition: .4s ease-in-out all;
+	border-radius: 0px 0px 300px 300px;
+}
+.boton.si:hover::after {
+	top: 0;
+}
+/* Boton SI -END */
+
+/* Boton NO */
+.boton.no::after {
+	content: "";
+	width: 1px;
+	height: 1px;
+	background: none;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transition: .4s ease-in-out all;
+}
+.boton.no:hover::after {
+	transform: scale(600);
+	background: #cc1010;
+	border-radius: 0px 600px 600px 600px;
+}
+/* Boton NO -END */

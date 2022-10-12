@@ -1,0 +1,41 @@
+* {
+  background: #cc1;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+:root{
+  --heigth:200px;
+  --color:red;
+}
+.heart{
+  height: var(--heigth);
+  width: var(--heigth);
+  background-color: var(--color);
+  transform: rotate(45deg);
+  animation: latir .5s infinite ease-in-out alternate;
+}
+.heart::before, .heart::after{
+  content: "";
+  height: var(--heigth);
+  width: var(--heigth);
+  background-color: var(--color);
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  transform: translateY(-100px);
+}
+.heart::after{
+  transform: translateX(-100px);
+  
+}
+@keyframes latir{
+  100%{
+      transform:rotate(45deg) scale(1.2);
+  }
+}
+
+/* CODE BY: NoBody#9666 */
